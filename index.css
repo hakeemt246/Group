@@ -31,17 +31,52 @@ body{
 .navbar img{
   height: 50px;
 }
+p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
-#heaefeder{
-  height: 50px;
-  width: 100%;
-  padding: 14px 16px;
+
+.cakeofweek {
+  width: 70%;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.cakeofweek img {
+  height: 300px;
+  width: 500px;
+}
+.cakes {
+
+  float: left;
+  width: 45%;
+  padding-left: 45px;
+  text-align: center;
 
 }
+.cakes img{
+  width: 400px;
+  height: 500px;
+}
+
+
 
 #container{
   margin:0;
 
+}
+#orderB{
+  background-color: #00c6ff;
+  font-size: 17px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 2px solid #00c6ff;
+  border-radius: 9px;
+  color: white;
+}
+#clear {
+  clear: both;
 }
 
 
@@ -56,11 +91,65 @@ body{
   padding-left: 19px;
   padding-right: 19px;
   margin-top: 50px;
+  overflow: hidden;
 }
-h1 {
-  background-color: rgb(0, 198, 255);
-  text-align: center;
+h1.content {
+  border-top: 1px solid #00c6ff;
+  border-bottom: 1px solid #00c6ff;
+  //background-color: rgb(0, 198, 255);
+  //text-align: center;
 
+}
+/*             Select Box      */
+body select {
+display: inline-block;
+padding: 10px 70px 10px 13px !important;
+max-width: 100%;
+height: auto !important;
+border: 1px solid #e3e3e3;
+border-radius: 3px;
+background: url("https://i.ibb.co/b7xjLrB/selectbox-arrow.png") right center no-repeat;
+background-color: #fff;
+color: #444444;
+font-size: 12px;
+line-height: 16px !important;
+appearance: none;
+/* this is must */ -webkit-appearance: none;
+-moz-appearance: none;
+}
+/* body select.select_box option */
+body select option {
+padding: 0 4px;
+}
+/* for IE and Edge */
+select::-ms-expand {
+display: none;
+}
+select:disabled::-ms-expand {
+background: #f60;
+}
+
+/*             END Select Box      */
+#cake {
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px ridge #00c6ff;
+  border-radius: 8px;
+ }
+ol#liofCakes li {
+  display: inline;
+}
+ol#liofCakes img {
+  height: 157px;
+  width: 237px;
+}
+.centhor{
+  text-align: center;
+  vertical-align:
+  
 }
 /*                  Scroll Bar
 /* width
@@ -78,8 +167,65 @@ h1 {
  background: #888;
 }
 
-/* Handle on hover 
+/* Handle on hover
 ::-webkit-scrollbar-thumb:hover {
  background: #555;
 }
      end of scroll bar     */
+     /* Order Button */
+     #btn {
+       background: #222;
+       height: 50px;
+       width: 150px;
+       border: none;
+       border-radius: 10px;
+       color: #eee;
+       font-size: 40px;
+       font-family: 'Cookie', cursive;
+       position: relative;
+       transition: 1s;
+       -webkit-tap-highlight-color: transparent;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       cursor: pointer;
+       padding-top: 5px;
+       margin-left: auto;
+       margin-right: auto;
+       padding-right: 3px;
+       padding-left: 3px;:
+     }
+
+     #btn #circle {
+       width: 5px;
+       height: 5px;
+       background: transparent;
+       border-radius: 50%;
+       position: absolute;
+       top: 0;
+       left: 50%;
+       overflow: hidden;
+       transition: 500ms;
+     }
+
+     .noselect {
+       -webkit-touch-callout: none;
+         -webkit-user-select: none;
+          -khtml-user-select: none;
+            -moz-user-select: none;
+             -ms-user-select: none;
+                 user-select: none;
+     }
+
+     #btn:hover {
+       background: transparent;
+       background-color: #00c6ff;
+     }
+
+     #btn:hover #circle {
+       height: 50px;
+       width: 150px;
+       left: 0;
+       border-radius: 0;
+       border-bottom: 2px solid #eee;
+     } /* End of button */
