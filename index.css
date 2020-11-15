@@ -1,7 +1,7 @@
 body{
   /* 00c6ff or cffffc*/
   margin: 0;
-  background-image: url(./b3.png); //#00c6ff
+  background-image: url(img/b3.png); //#00c6ff
   background-repeat: repeat;
   background-size: 75px 75px;
 }
@@ -146,11 +146,34 @@ ol#liofCakes img {
   height: 157px;
   width: 237px;
 }
-.centhor{
+.layersofc{
+  width: 33%;
+  float: left;
   text-align: center;
-  vertical-align:
-  
 }
+
+.layersofc img {
+  height: 157px;
+  width: 237px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.filler{
+  height: 75vh;
+}
+.makecake{
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.makecake img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 /*                  Scroll Bar
 /* width
 ::-webkit-scrollbar {
@@ -229,3 +252,7 @@ ol#liofCakes img {
        border-radius: 0;
        border-bottom: 2px solid #eee;
      } /* End of button */
+     a{
+       color: inherit;
+       background-color: inherit;
+     }

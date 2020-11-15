@@ -12,7 +12,7 @@
 
 
         <div class="navbar">
-          <a href="home.html"><img src="logo.png" alt="Logo"></a>
+          <a href="home.html"><img src="img/logo.png" alt="Logo"></a>
           <a class="link" href="aboutus.html">About Us</a>
           <a class="link" href="design.html">Make A Cake</a>
           <a class="link" href="home.html">Home</a>
@@ -26,25 +26,30 @@
       <div id="content">
         <h1>Make A Cake </h1>
         <hr>
-        <img id="cake" src="cake2.gif" alt="">
+        <img id="cake" src="img/cake2.gif" alt="">
         <hr>
         <form class="" action="design.html" method="post">
           <h2>Choose Layer</h2>
-          <ol id="liofCakes">
-            <li> <img src="vaniLayer.jpg" alt=""></li>
-            <li><img src="choclayer.jpg" alt=""></li>
-            <li><img src="redLayer.jpg" alt=""></li>
-          </ol>
-          <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            Vanilla Layer&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            Chocolate Layer&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-             Red Velvet Layer</p>
+
+          <div class="layersofc">
+            <img src="img/vaniLayer.jpg" alt="">
+            <p>Vanilla Layer</p>
+          </div>
+          <div class="layersofc">
+            <img src="img/choclayer.jpg" alt="">
+            <p>  Chocolate Layer</p>
+          </div>
+          <div class="layersofc">
+            <img src="img/redLayer.jpg" alt="">
+            <p>Red Velvet Layer</p>
+          </div>
+          <div id="clear"></div>
+
           <span>Layer 1</span>
           <select class="select_box" name="Layer1">
             <option value="Vanilla" >Vanilla</option>
             <option value="Vanilla">Chocolate</option>// <!--cake topppers name -->
             <option value="">Red Velvet</option>
-            <option value="">Cocunut</option>
           </select>
           &nbsp&nbsp&nbsp<span class="">Layer 2</span>
           <select class="" name="Layer2">
@@ -52,7 +57,6 @@
             <option value="Vanilla">Vanilla</option>
             <option value="Choc">Chocolate</option>
             <option value="">Red Velvet</option>
-            <option value="">Cocunut</option>
           </select>
           &nbsp&nbsp&nbsp<span>Layer 3</span>
           <select class="" name="Layer3">
@@ -60,7 +64,6 @@
             <option value="Vanilla">Vanilla</option>
             <option value="Vanilla">Chocolate</option>
             <option value="">Red Velvet</option>
-            <option value="">Cocunut</option>
           </select>
           &nbsp&nbsp&nbsp<span>Layer 4</span>
           <select class="" name="Layer4">
@@ -68,25 +71,57 @@
             <option value="Vanilla">Vanilla</option>
             <option value="Vanilla">Chocolate</option>
             <option value="">Red Velvet</option>
-            <option value="">Cocunut</option>
           </select>
           <br>
           <br>
+          <div class="layersofc">
+            <img src="img/vanIce.jpg" alt="">
+            <p>Vanilla Icing</p>
+          </div>
+          <div class="layersofc">
+            <img src="img/chocIce.jpg" alt="">
+            <p>Chocolate Icing</p>
+          </div>
+          <div class="layersofc">
+            <img src="img/cocIce.jpg" width="200px"alt="">
+            <p>Coconut Icing</p>
+          </div>
+          <div id="clear"></div>
           <span>Type of Icings</span>
           <select class="" name="">
             <option value="">Chocolate</option>
             <option value="">Vanilla</option>
-            <option value="">Coconut</option>
+            <option value="">Coconut Buttercream</option>
           </select>
           <br>
           <br>
           <span>Icings Colors</span>
           <select class="" name="">
-            <option value="">White</option>
-            <option value="">Red</option>
-            <option value="">Pink</option>
+            <option value="" >White</option>
+            <option value="" style="background-color:red">Red</option>
+            <option value="" style="background-color:pink">Pink</option>
+            <option value="" style="background-color:#0e83b5">Blue</option>
+            <option value="" style="background-color:#0eb54b">Green</option>
+            <option value="" style="background-color:yellow">Yellow</option>
+            <option value="" style="background-color:orange">Orange</option>
+
           </select>
           <br>
+          <br>
+          <br>
+          <div class="layersofc">
+            <img src="img/fruit_top.jpg" alt="">
+            <p>Fruit Topping</p>
+          </div>
+          <div class="layersofc">
+            <img src="img/choc_top.jpg" alt="">
+            <p>Chocolate Topping</p>
+          </div>
+          <div class="layersofc">
+            <img src="img/fondant_top.jpg" alt="">
+            <p>Fondant</p>
+          </div>
+          <div id="clear"></div>
           <br>
           <span>Type of Cake Toppings</span>
           <select class="" name="">
@@ -95,17 +130,24 @@
             <option value="">Chocolate</option>
             <option value="">Fondant</option>
           </select>
-
+          <span>Additional Toppings: </span>
+          <select class="" name="">
+            <option value="">---None---</option>
+            <option value="">Fruit</option>
+            <option value="">Chocolate</option>
+            <option value="">Fondant</option>
+          </select>
           <br>
           <br>
           <span>Type of Cake Toppers</span>
           <select class="" name="">
             <option value="">---None---</option>
             <option value="">Birthday Topper</option>
-            <option value="">Custom Name</option>
-          </select><br><br>
+            <option value="">Custom</option>
+          </select> <span> <label for="">Custom <input type="text" name="" value=""> </label> </span>
+          <br><br>
           <textarea name="name" placeholder="For additional specifications or description Type Here" rows="8" cols="80"></textarea>
-          <div id="btn"><span class="noselect">Make</span><div id="circle"></div></div>
+          <div id="btn"><a href= "makecake.html"><span class="noselect">Make</span><div id="circle"></div></a></div>
 
 
 
